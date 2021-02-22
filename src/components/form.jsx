@@ -35,8 +35,9 @@ class Form extends Component {
   }
 
   handleSubmit = event => {
-		alert(`${this.state.username} ${this.state.comments} ${this.state.topic}`)
 		event.preventDefault()
+    const data = this.state;
+    console.log(data);
 	}
 
   render() { 
